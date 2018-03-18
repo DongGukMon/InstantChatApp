@@ -21,7 +21,6 @@ export default class ChatBar extends Component {
             sendHeight: 24,
             text: '',
         };
-        this.ref = `users/uid1/message`;
     }
     componentDidMount() {
         this.keyboardShowListener = Keyboard.addListener('keyboardDidShow', (e) =>
@@ -41,7 +40,7 @@ export default class ChatBar extends Component {
         this.setState({ marginBottom: e.endCoordinates.height });
     }
     input_data(textData) {
-        return firebase.database().ref(this.ref).set(textData)
+        return firebase.database().ref(`users/${this.props.uid}/message`).set(textData)
     }
 
     render() {
