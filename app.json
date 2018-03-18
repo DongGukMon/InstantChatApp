@@ -1,0 +1,13 @@
+{
+  "expo": {
+    "sdkVersion": "25.0.0",
+    "ios": {
+      "bundleIdentifier": "com.facechat.instantchat"
+    },
+    "android": {
+      "package": "com.facechat.instantchat"
+    }
+  },
+  "name": "InstantChatApp",
+  "displayName": "App.js"
+}
